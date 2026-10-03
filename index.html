@@ -89,10 +89,14 @@
 
     .contact{position:relative;overflow:hidden;padding:78px 0;color:white;background:var(--teal-dark);border-top:8px solid var(--coral)}
     .contact .label{color:var(--yellow)}
-    .contact-grid{position:relative;z-index:1;display:flex;align-items:end;justify-content:space-between;gap:50px}
+    .contact-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:start}
     .contact h2{max-width:650px}
     .contact-copy{max-width:600px;margin:0;color:#E9E1D5}
     .contact-actions{margin-top:25px;display:flex;gap:12px;flex-wrap:wrap}
+    .business-details{padding:24px 26px;background:#ffffff14}
+    .business-details h3{margin:0 0 14px;font-size:1.05rem}
+    .business-details p{margin:0 0 7px;color:#F1ECE2}
+    .business-details .legal{margin-top:18px;font-size:.9rem;color:#E8E0D4}
 
     footer{padding:23px 0;color:#FFF8E8;background:var(--coral);font-size:.85rem}
     .footer-inner{display:flex;justify-content:space-between;gap:20px}
@@ -111,7 +115,8 @@
       .hero-side{padding:22px 0 0;border-left:0;border-top:3px solid var(--yellow)}
       section{padding:52px 0}
       .approach-grid,.price-grid{grid-template-columns:1fr;gap:34px}
-      .service-head,.contact-grid{display:block}
+      .service-head{display:block}
+      .contact-grid{grid-template-columns:1fr;gap:30px}
       .service-head>p{margin-top:19px}
       .grid{grid-template-columns:1fr}
       .service{min-height:0}
@@ -236,6 +241,15 @@
             <a class="button light" href="mailto:brecht-vanriet@hotmail.com">E-mail sturen</a>
           </div>
         </div>
+        <div class="business-details">
+          <h3>Atelier Van Riet</h3>
+          <p>Abelenstraat 50</p>
+          <p>2640 Mortsel</p>
+          <div class="legal">
+            <p>Ondernemingsnummer: 0722.631.489</p>
+            <p>BTW: BE 0722.631.489</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -243,7 +257,7 @@
   <footer>
     <div class="footer-inner wrap">
       <p>© Atelier Van Riet</p>
-      <p>Algemeen kluswerk · Mortsel</p>
+      <p>Ondernemingsnummer 0722.631.489 · Mortsel</p>
     </div>
   </footer>
 </body>
