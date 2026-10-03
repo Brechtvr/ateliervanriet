@@ -69,6 +69,17 @@
     .service h3{margin:0 0 9px;font-size:1.28rem}
     .service p{margin:0;color:var(--muted)}
 
+    .pricing{background:var(--paper)}
+    .price-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
+    .price-box{padding:30px;background:var(--green);color:var(--white);border-top:6px solid var(--ochre)}
+    .price-box strong{display:block;font-size:clamp(2.3rem,5vw,4rem);line-height:1;margin-bottom:5px}
+    .price-box span{display:block;color:#ded9cc;font-size:.9rem;margin-bottom:18px}
+    .price-box p{margin:0;color:#ebe7dc}
+    .price-list{border-top:1px solid var(--line)}
+    .price-row{display:grid;grid-template-columns:180px 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line)}
+    .price-row strong{font-size:.95rem}
+    .price-row p{margin:0;color:var(--muted)}
+
     .approach{background:#e5dfcf}
     .approach-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
     .steps{border-top:1px solid #29282055}
@@ -100,11 +111,12 @@
       .hero{min-height:470px}
       .hero-inner{padding:66px 0}
       section{padding:64px 0}
-      .about,.approach-grid{grid-template-columns:1fr;gap:34px}
+      .about,.approach-grid,.price-grid{grid-template-columns:1fr;gap:34px}
       .service-head,.contact-grid{display:block}
       .service-head>p{margin-top:19px}
       .grid{grid-template-columns:1fr}
       .service{min-height:0}
+      .price-row{grid-template-columns:1fr;gap:4px}
       .contact{padding:68px 0}
       .contact-copy{margin-bottom:25px}
       .footer-inner{flex-direction:column}
@@ -117,9 +129,10 @@
 
   <div class="topbar">
     <nav class="wrap" aria-label="Hoofdnavigatie">
-      <a class="brand" href="#" aria-label="Atelier Van Riet, startpagina"><span class="mark" aria-hidden="true">R</span><span>Atelier Van Riet</span></a>
+      <a class="brand" href="#" aria-label="Atelier Van Riet, startpagina">Atelier Van Riet</a>
       <div class="links">
         <a href="#diensten">Diensten</a>
+        <a href="#prijzen">Prijzen</a>
         <a href="#werkwijze">Werkwijze</a>
         <a class="nav-cta" href="#contact">Contact</a>
       </div>
@@ -131,7 +144,6 @@
       <p class="eyebrow">Atelier Van Riet · Mortsel</p>
       <h1>Algemeen kluswerk in huis en tuin.</h1>
       <p class="hero-copy">Herstellingen, kleine renovaties, montage, houtwerk, metaalwerk en andere praktische klussen in en rond de woning.</p>
-      <a class="button light" href="#contact">Contact opnemen</a>
     </div>
   </header>
 
@@ -185,6 +197,28 @@
             <h3>Metaal- en laswerk</h3>
             <p>Kleine laswerken, metalen onderdelen, frames en eenvoudige constructies.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="pricing" id="prijzen">
+      <div class="wrap">
+        <p class="label">Prijzen</p>
+        <h2>Duidelijke tarieven.</h2>
+        <div class="price-grid">
+          <div class="price-box">
+            <strong>€50/u</strong>
+            <span>excl. btw</span>
+            <p>Minimum 1 uur. Daarna wordt per begonnen kwartier aangerekend (€12,50).</p>
+          </div>
+          <div class="price-list">
+            <div class="price-row"><strong>Verplaatsing</strong><p>€25 per interventie in de regio. Buiten de regio volgens afspraak.</p></div>
+            <div class="price-row"><strong>Materialen</strong><p>Worden apart aangerekend aan verkoopprijs. Klein materiaal vanaf €7,50 per interventie.</p></div>
+            <div class="price-row"><strong>Materiaal ophalen</strong><p>De tijd voor het ophalen van materiaal wordt aangerekend aan het gewone uurtarief.</p></div>
+            <div class="price-row"><strong>Andere kosten</strong><p>Parking, afvalverwerking, machinehuur en specifieke kosten worden apart aangerekend.</p></div>
+            <div class="price-row"><strong>Grotere werken</strong><p>Voor grotere opdrachten spreken we vooraf een prijsraming af.</p></div>
+          </div>
         </div>
       </div>
     </section>
