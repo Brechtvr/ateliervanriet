@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#32B8C6">
+  <meta name="theme-color" content="#6F9FA3">
   <meta name="description" content="Atelier Van Riet voor algemeen kluswerk in huis en tuin: herstellingen, kleine renovaties, montage, hout- en metaalwerk vanuit Mortsel.">
   <title>Atelier Van Riet | Algemeen kluswerk in huis en tuin</title>
   <style>
     :root{
-      --coral:#FF5151;
-      --teal:#32B8C6;
-      --yellow:#F3D36A;
-      --paper:#FFF8E7;
-      --white:#FFFDF7;
-      --text:#2F2F2B;
-      --muted:#67675F;
-      --line:#E2D7B8;
+      --coral:#E66D63;
+      --teal:#6F9FA3;
+      --teal-dark:#527B7F;
+      --yellow:#E8CC78;
+      --paper:#F5F0E6;
+      --white:#FFFDF8;
+      --text:#31302C;
+      --muted:#6B6861;
+      --line:#DDD4C4;
       --width:1160px;
     }
     *{box-sizing:border-box}
@@ -35,14 +36,19 @@
     .links a:hover{color:var(--coral);text-decoration:underline;text-underline-offset:4px}
     .nav-cta{padding:0;border:none}
 
-    .hero{background:var(--teal);color:var(--white);border-bottom:6px solid var(--yellow)}
-    .hero-inner{padding:64px 0;display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:start}
+    .hero{position:relative;overflow:hidden;background:var(--teal);color:var(--white);border-bottom:6px solid var(--yellow)}
+    .hero:after{content:"";position:absolute;right:-30px;top:-55px;width:520px;height:520px;pointer-events:none;opacity:.34;background:
+      radial-gradient(circle at 72% 24%,transparent 0 42px,var(--yellow) 43px 62px,transparent 63px),
+      radial-gradient(circle at 38% 38%,transparent 0 78px,var(--coral) 79px 105px,transparent 106px),
+      radial-gradient(circle at 82% 73%,transparent 0 54px,var(--yellow) 55px 76px,transparent 77px),
+      radial-gradient(circle at 42% 83%,transparent 0 34px,var(--coral) 35px 52px,transparent 53px)}
+    .hero-inner{position:relative;z-index:1;padding:64px 0;display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:start}
     .eyebrow,.label{margin:0 0 12px;text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:700}
     .eyebrow{color:var(--yellow)}
     h1,h2,h3{font-family:Arial,Helvetica,sans-serif}
     h1{max-width:700px;margin:0 0 18px;font-size:clamp(2.35rem,4.4vw,3.8rem);line-height:1.05;letter-spacing:-.035em}
     .hero-copy{max-width:650px;margin:0;color:#FFFBEF;font-size:1.02rem}
-    .hero-side{padding:5px 0 0 28px;border-left:4px solid var(--coral);color:#FFFBEF}
+    .hero-side{padding:5px 0 0 28px;border-left:4px solid var(--yellow);color:#FFFBEF}
     .hero-side strong{display:block;margin-bottom:8px;color:var(--white);font-size:1.08rem}
     .hero-side p{margin:0 0 18px}
     .hero-side p:last-child{margin-bottom:0}
@@ -62,14 +68,15 @@
     .service-head>p{max-width:420px;margin:0 0 5px;color:var(--muted)}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
     .service{min-height:165px;padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .service:nth-child(odd){border-top:4px solid var(--teal);background:#FFFDF5}
-    .service:nth-child(even){border-top:4px solid var(--coral);background:#FFF3DE}
+    .service:nth-child(odd){border-top:4px solid var(--teal-dark);background:#FCFAF5}
+    .service:nth-child(even){border-top:4px solid var(--coral);background:#F8ECE8}
     .service h3{margin:0 0 8px;font-size:1.12rem}
     .service p{margin:0;color:var(--muted)}
 
-    .pricing{background:var(--paper)}
+    .pricing{position:relative;overflow:hidden;background:var(--paper)}
+    .pricing:after{content:"";position:absolute;right:6%;bottom:-70px;width:210px;height:210px;border:22px solid var(--yellow);border-radius:50%;opacity:.22;pointer-events:none}
     .price-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
-    .price-box{padding:30px;background:var(--coral);color:var(--white);border-top:6px solid var(--yellow)}
+    .price-box{padding:30px;background:var(--coral);color:var(--white);border-top:6px solid var(--teal-dark)}
     .price-box strong{display:block;font-size:clamp(2rem,4vw,2.8rem);line-height:1;margin-bottom:5px}
     .price-box span{display:block;color:var(--yellow);font-size:.9rem;margin-bottom:18px}
     .price-box p{margin:0;color:#F2ECE1}
@@ -78,7 +85,7 @@
     .price-row strong{font-size:.95rem}
     .price-row p{margin:0;color:var(--muted)}
 
-    .approach{background:#FFF2CC;color:var(--text)}
+    .approach{background:#EFE5C4;color:var(--text)}
     .approach-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
     .steps{border-top:1px solid #3B2F2744}
     .step{display:grid;grid-template-columns:42px 1fr;gap:16px;padding:21px 0;border-bottom:1px solid #3B2F2744}
@@ -86,14 +93,15 @@
     .step h3{margin:0 0 5px;font-size:1rem}
     .step p{margin:0;color:#4F514B;font-size:.94rem}
 
-    .contact{padding:78px 0;color:white;background:var(--teal);border-top:8px solid var(--coral)}
+    .contact{position:relative;overflow:hidden;padding:78px 0;color:white;background:var(--teal-dark);border-top:8px solid var(--coral)}
+    .contact:after{content:"";position:absolute;right:-80px;bottom:-120px;width:300px;height:300px;border:30px solid var(--yellow);border-radius:50%;opacity:.18;pointer-events:none}
     .contact .label{color:var(--yellow)}
-    .contact-grid{display:flex;align-items:end;justify-content:space-between;gap:50px}
+    .contact-grid{position:relative;z-index:1;display:flex;align-items:end;justify-content:space-between;gap:50px}
     .contact h2{max-width:650px}
     .contact-copy{max-width:600px;margin:0;color:#E9E1D5}
     .contact-actions{margin-top:25px;display:flex;gap:12px;flex-wrap:wrap}
 
-    footer{padding:23px 0;color:#FFF6D6;background:var(--coral);font-size:.85rem}
+    footer{padding:23px 0;color:#FFF8E8;background:var(--coral);font-size:.85rem}
     .footer-inner{display:flex;justify-content:space-between;gap:20px}
     footer p{margin:0}
 
@@ -107,7 +115,7 @@
       .links a:not(.nav-cta){display:none}
       .nav-cta{padding:8px 11px;font-size:.82rem!important}
       .hero-inner{padding:48px 0;grid-template-columns:1fr;gap:30px}
-      .hero-side{padding:22px 0 0;border-left:0;border-top:3px solid var(--coral)}
+      .hero-side{padding:22px 0 0;border-left:0;border-top:3px solid var(--yellow)}
       section{padding:52px 0}
       .approach-grid,.price-grid{grid-template-columns:1fr;gap:34px}
       .service-head,.contact-grid{display:block}
