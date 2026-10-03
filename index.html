@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Atelier Van Riet</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #f5f3ee;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: #1f211f;
+      color: white;
+    }
+
+    header h1 {
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 600;
+      letter-spacing: -3px;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      color: #d5d5d0;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      padding: 90px 25px;
+    }
+
+    h2 {
+      font-size: 2.3rem;
+      margin-bottom: 30px;
+    }
+
+    .intro {
+      font-size: 1.25rem;
+      max-width: 720px;
+    }
+
+    .diensten {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 35px;
+    }
+
+    .dienst {
+      background: white;
+      padding: 30px;
+      min-height: 150px;
+    }
+
+    .dienst h3 {
+      margin-bottom: 10px;
+    }
+
+    .werkwijze {
+      background: #dedbd2;
+    }
+
+    .contact {
+      text-align: center;
+      padding-bottom: 120px;
+    }
+
+    .contact p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      background: #1f211f;
+      color: white;
+      padding: 14px 25px;
+      margin: 5px;
+    }
+
+    footer {
+      background: #1f211f;
+      color: #aaa;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>Atelier Van Riet</h1>
+    <p>Kluswerk · maatwerk · hout · metaal</p>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <h2>Atelier Van Riet</h2>
+
+    <p class="intro">
+      Voor kleine renovaties, herstellingen en maatwerk.
+      Van praktische klussen tot projecten in hout en metaal,
+      met duidelijke afspraken en een persoonlijke aanpak.
+    </p>
+  </section>
+
+  <section>
+    <h2>Wat ik doe</h2>
+
+    <div class="diensten">
+
+      <div class="dienst">
+        <h3>Klus- en renovatiewerk</h3>
+        <p>Kleine verbouwingen, herstellingen en praktische werkzaamheden.</p>
+      </div>
+
+      <div class="dienst">
+        <h3>Hout & maatwerk</h3>
+        <p>Kasten, constructies, aanpassingen en maatwerk.</p>
+      </div>
+
+      <div class="dienst">
+        <h3>Montage</h3>
+        <p>Montage en plaatsing van allerlei interieur- en bouwelementen.</p>
+      </div>
+
+      <div class="dienst">
+        <h3>Metaal & laswerk</h3>
+        <p>Kleine laswerken, herstellingen en constructies op maat.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="werkwijze">
+    <h2>Werkwijze</h2>
+
+    <p class="intro">
+      Geen ingewikkelde offertes of onduidelijke afspraken.
+      We bekijken samen wat er nodig is en spreken vooraf duidelijk af
+      hoe het werk wordt uitgevoerd en wat de verwachte kosten zijn.
+    </p>
+  </section>
+
+  <section class="contact">
+    <h2>Een klus of project?</h2>
+
+    <p>
+      Neem gerust contact op en stuur eventueel enkele foto's door.
+    </p>
+
+    <a class="button" href="#">WhatsApp</a>
+    <a class="button" href="#">E-mail</a>
+  </section>
+
+</main>
+
+<footer>
+  © Atelier Van Riet
+</footer>
+
+</body>
+</html>
