@@ -3,43 +3,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#6F9FA3">
+  <meta name="theme-color" content="#567A78">
   <meta name="description" content="Atelier Van Riet voor algemeen kluswerk in huis en tuin: herstellingen, kleine renovaties, montage, hout- en metaalwerk vanuit Mortsel.">
   <title>Atelier Van Riet | Algemeen kluswerk in huis en tuin</title>
   <style>
     :root{
-      --coral:#E66D63;
-      --teal:#6F9FA3;
-      --teal-dark:#527B7F;
-      --yellow:#E8CC78;
-      --paper:#F5F0E6;
-      --white:#FFFDF8;
-      --text:#31302C;
-      --muted:#6B6861;
-      --line:#DDD4C4;
+      --brick:#C95F55;
+      --petrol:#567A78;
+      --petrol-dark:#3F5F5D;
+      --mustard:#D8B956;
+      --paper:#F2EEE6;
+      --white:#FCFAF6;
+      --text:#2D2D2A;
+      --muted:#66635D;
+      --line:#D8D0C4;
       --width:1160px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth;scroll-padding-top:84px}
     body{margin:0;background:var(--paper);color:var(--text);font:16px/1.6 Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
     a{color:inherit}
-    a:focus-visible{outline:3px solid var(--coral);outline-offset:4px}
+    a:focus-visible{outline:3px solid var(--brick);outline-offset:4px}
     .wrap{width:min(var(--width),calc(100% - 48px));margin:auto}
     .skip{position:absolute;top:-60px;left:12px;z-index:9;padding:10px;background:white}.skip:focus{top:12px}
 
     .topbar{position:sticky;top:0;z-index:5;background:var(--white);border-bottom:1px solid var(--line)}
     nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
     .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:700}
-    .mark{width:36px;height:36px;display:grid;place-items:center;background:var(--coral);color:var(--paper);font:700 18px Arial,Helvetica,sans-serif}
+    .mark{width:36px;height:36px;display:grid;place-items:center;background:var(--brick);color:var(--paper);font:700 18px Arial,Helvetica,sans-serif}
     .links{display:flex;align-items:center;gap:28px}
     .links a{text-decoration:none;font-size:.93rem}
-    .links a:hover{color:var(--coral);text-decoration:underline;text-underline-offset:4px}
+    .links a:hover{color:var(--brick);text-decoration:underline;text-underline-offset:4px}
     .nav-cta{padding:0;border:none}
 
-    .hero{position:relative;overflow:hidden;background:var(--teal);color:var(--white);border-bottom:none}
+    .hero{position:relative;overflow:hidden;background:var(--petrol);color:var(--white);border-bottom:none}
     .hero-inner{position:relative;z-index:1;padding:64px 0;display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:start}
     .eyebrow,.label{margin:0 0 12px;text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:700}
-    .eyebrow{color:var(--yellow)}
+    .eyebrow{color:var(--mustard)}
     h1,h2,h3{font-family:Arial,Helvetica,sans-serif}
     h1{max-width:700px;margin:0 0 18px;font-size:clamp(2.35rem,4.4vw,3.8rem);line-height:1.05;letter-spacing:-.035em}
     .hero-copy{max-width:650px;margin:0;color:#FFFBEF;font-size:1.02rem}
@@ -48,12 +48,12 @@
     .hero-side p{margin:0 0 18px}
     .hero-side p:last-child{margin-bottom:0}
     .button{display:inline-flex;min-height:46px;align-items:center;justify-content:center;padding:10px 17px;text-decoration:none;font-weight:700;font-size:.92rem;border:1px solid transparent}
-    .light{background:var(--yellow);color:var(--text)}
+    .light{background:var(--mustard);color:var(--text)}
     .outline{border-color:#ffffff88;color:white}
     .hero-note{margin:36px 0 0;color:#D9D0C2;font-size:.88rem}
 
     section{padding:64px 0}
-    .label{color:var(--coral)}
+    .label{color:var(--brick)}
     h2{max-width:780px;margin:0 0 24px;font-size:clamp(1.75rem,3vw,2.3rem);line-height:1.12;letter-spacing:-.02em}
     .lead{max-width:780px;color:#4B4943;font-size:1rem}
 
@@ -63,14 +63,14 @@
     .service-head>p{max-width:420px;margin:0 0 5px;color:var(--muted)}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
     .service{min-height:165px;padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .service:nth-child(odd){border-top:4px solid var(--teal-dark);background:#FCFAF5}
-    .service:nth-child(even){border-top:4px solid var(--yellow);background:#F6EFD3}
+    .service:nth-child(odd){border-top:2px solid var(--petrol);background:var(--white)}
+    .service:nth-child(even){border-top:2px solid var(--mustard);background:var(--white)}
     .service h3{margin:0 0 8px;font-size:1.12rem}
     .service p{margin:0;color:var(--muted)}
 
     .pricing{position:relative;overflow:hidden;background:var(--paper)}
     .price-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
-    .price-box{padding:30px;background:var(--coral);color:var(--white)}
+    .price-box{padding:30px;background:var(--brick);color:var(--white)}
     .price-box strong{display:block;font-size:clamp(2rem,4vw,2.8rem);line-height:1;margin-bottom:5px}
     .price-box span{display:block;color:var(--white);font-size:.9rem;margin-bottom:18px}
     .price-box p{margin:0;color:#F2ECE1}
@@ -79,16 +79,16 @@
     .price-row strong{font-size:.95rem}
     .price-row p{margin:0;color:var(--muted)}
 
-    .approach{background:#EFE5C4;color:var(--text)}
+    .approach{background:#E8E2D7;color:var(--text)}
     .approach-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
     .steps{border-top:1px solid #3B2F2744}
     .step{display:grid;grid-template-columns:42px 1fr;gap:16px;padding:21px 0;border-bottom:1px solid #3B2F2744}
-    .step>span{color:var(--teal);font-size:.82rem;font-weight:700}
+    .step>span{color:var(--petrol);font-size:.82rem;font-weight:700}
     .step h3{margin:0 0 5px;font-size:1rem}
     .step p{margin:0;color:#4F514B;font-size:.94rem}
 
-    .contact{position:relative;overflow:hidden;padding:78px 0;color:white;background:var(--teal-dark)}
-    .contact .label{color:var(--yellow)}
+    .contact{position:relative;overflow:hidden;padding:78px 0;color:white;background:var(--petrol-dark)}
+    .contact .label{color:var(--mustard)}
     .contact-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:start}
     .contact h2{max-width:650px}
     .contact-copy{max-width:600px;margin:0;color:#E9E1D5}
@@ -98,7 +98,7 @@
     .business-details p{margin:0 0 7px;color:#F1ECE2}
     .business-details .legal{margin-top:18px;font-size:.9rem;color:#E8E0D4}
 
-    footer{padding:23px 0;color:#FFF8E8;background:var(--coral);font-size:.85rem}
+    footer{padding:23px 0;color:#F0ECE3;background:#314A48;font-size:.85rem}
     .footer-inner{display:flex;justify-content:space-between;gap:20px}
     footer p{margin:0}
 
