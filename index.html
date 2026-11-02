@@ -41,7 +41,7 @@
     .links .nav-cta:hover{background:#713923;text-decoration:none}
 
     .hero{overflow:hidden;background:var(--petrol);color:#fff}
-    .hero-inner{padding:86px 0 92px;display:grid;grid-template-columns:1.1fr .9fr;gap:62px;align-items:center}
+    .hero-inner{padding:86px 0 92px;display:grid;grid-template-columns:1fr;gap:0;align-items:center}
     .eyebrow,.label{font-size:.72rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
     .eyebrow{display:block;color:#F2C75A;margin:0 0 20px}
     h1,h2,h3{font-family:Arial,Helvetica,sans-serif}
@@ -51,13 +51,6 @@
     .light{background:var(--mustard);color:#282720}
     .light:hover{background:#E5B43B}
     .outline{border-color:#ffffff88;color:#fff}
-    .hero-art{height:340px;position:relative;border:1px solid #ffffff29;background:var(--sage);overflow:hidden}
-    .patch{position:absolute;transform:rotate(-11deg)}
-    .p1{width:63%;height:127%;top:-22%;left:-27%;background:var(--mustard);border-radius:55% 30% 65% 35% / 35% 58% 42% 65%}
-    .p2{width:64%;height:65%;top:-29%;right:-9%;background:var(--brick);border-radius:33% 60% 48% 56% / 57% 42% 68% 38%}
-    .p3{width:58%;height:80%;bottom:-34%;right:-20%;background:#D5B44A;border-radius:45% 63% 30% 70% / 64% 38% 72% 38%}
-    .p4{width:17%;height:38%;top:27%;left:44%;background:#AA7D56;border:12px solid #E1C9AB;border-radius:42% 58% 58% 30% / 64% 45% 55% 40%;transform:rotate(24deg)}
-    .patch-caption{position:absolute;bottom:13px;left:14px;right:14px;background:#292C27E6;color:#fff;font-size:.68rem;letter-spacing:.06em;padding:8px 10px;width:max-content;max-width:calc(100% - 28px)}
     .intro-strip{background:var(--white);border-bottom:1px solid var(--line)}
     .intro-inner{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:24px 0}
     .intro-inner strong{display:block;margin-bottom:3px;font-size:.9rem}
@@ -114,7 +107,6 @@
 
     @media(max-width:900px){
       .grid{grid-template-columns:repeat(2,1fr)}
-      .hero-inner{gap:30px;grid-template-columns:1fr .72fr}
       .price-grid,.approach-grid,.contact-grid{gap:35px}
     }
     @media(max-width:660px){
@@ -129,8 +121,6 @@
       .eyebrow{font-size:.68rem;margin-bottom:12px}
       h1{font-size:clamp(1.95rem,8vw,2.4rem);margin-bottom:14px}
       .hero-copy{font-size:.94rem;line-height:1.55;margin-bottom:19px}
-      .hero-art{height:170px;margin-top:27px}
-      .patch-caption{font-size:.58rem}
       .intro-inner{grid-template-columns:1fr;gap:14px;padding:18px 0}
       .intro-inner strong{font-size:.85rem}
       .intro-inner p{font-size:.8rem}
@@ -183,13 +173,6 @@
         <h1>Algemeen kluswerk in huis en tuin.</h1>
         <p class="hero-copy">Herstellingen, kleine renovaties, montage, houtwerk, metaalwerk en andere praktische klussen in en rond de woning.</p>
         <a class="button light" href="#contact">Neem contact op</a>
-      </div>
-      <div class="hero-art" role="img" aria-label="Abstract patroon in saliegroen, okergeel en roestbruin, geïnspireerd op de kleuren van boomschors">
-        <div class="patch p1"></div>
-        <div class="patch p2"></div>
-        <div class="patch p3"></div>
-        <div class="patch p4"></div>
-        <span class="patch-caption">NATUURLIJKE KLEUREN · MATERIAAL &amp; AMBACHT</span>
       </div>
     </div>
   </header>
